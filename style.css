@@ -1,8 +1,10 @@
+* {box-sizing: border-box
+}
+
 body {
 background: hsl(257, 40%, 49%);
 font-family: 'Open Sans' 'poppins';
 background-image: url("./images/bg-desktop.svg");
-width: 1440px;
 }
 .header img {
     margin-top: 40px;
@@ -66,4 +68,64 @@ footer {
     font-size: 30px;
     margin-left: 30px;
     color: hsl(0, 0%, 100%);
+}
+
+@media (min-whidth: 1023px){
+    body {
+        background-image: url('./images/bg-desktop.svg');
+        background-size: contain;
+        min-height: 100vh;
+        overflow: hidden;
+        
+    }
+    .header{
+        width: 30%;
+        margin: 1% 5%;
+    }
+
+    .main{
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .main img {
+        width: 130%;
+    }
+
+    .main .texto{
+        padding-left: 40px;
+    }
+
+    .main .titulo .parrafo{
+        text-align: left;
+        margin: 0;
+    }
+
+    .main .titulo{
+        font-size: 35px;
+        width: 80%;
+    }
+
+    .main .boton{
+        height: 50px;
+        width: 30%;
+        margin: 30px 0;
+    }
+
+    .footer {
+        margin-left: 70%;
+    }
+
+    .footer .redessociales{
+        width: 50%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footer__list--item{
+        margin: 0 10px
+    }
+
 }
